@@ -1,0 +1,43 @@
+Testing using python
+assets=> something should be true
+
+CI/CD
+1. Continous integration
+- Frequent merges to main branch
+- Automated unit testing
+
+2. Continous Delivery
+- Short release schedules
+- In shorter cycle you can make release to user
+- Deployment (Deployment hanppens automatically)
+
+GitHub Actions
+- if some one pushes something to the git repository , automatically it checks that code(well styled and documented)
+- Automate the process of running test.
+
+YAML
+- It is a file formate that structures the data in the form of keys and value(can multiple) pairs.
+
+.github>workflows>ci.yml
+yml code:-
+
+name: Testing
+on: push
+
+jobs:
+    test_project:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v2
+        - name: Run Django unit tests
+            run: |
+                pip3 install --user django
+                python3 manage.py test
+
+Docker:
+- contanerization software
+- Running the software into container instead of computer
+- seperate set up for a docker container
+- used for ci/cd
+- adv: keep the container consistent 
+

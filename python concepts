@@ -1,0 +1,3 @@
+venv:
+- seperate package environment for the project
+- pip is package manager for python

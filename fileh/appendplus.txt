@@ -1,0 +1,2 @@
+Existing line 1
+Existing line 2This is 1st line appended using a+ modeThis is 2nd line appended using a+ modeThis is 2nd line appended using a+ mode

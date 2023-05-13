@@ -1,0 +1,1 @@
+This is 1st line written using writefile.pyThis is 2nd line written using writefile.py
